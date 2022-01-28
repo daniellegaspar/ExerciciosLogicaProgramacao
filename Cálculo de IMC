@@ -9,11 +9,11 @@ Inicio
            Escreva("Altura(m)")
            leia(altura)
            IMC <- massa / (altura * altura)
-           escrevaL("Seu IMC é de ", IMC:5:2)
+           escrevaL("Seu IMC Ã© de ", IMC:5:2)
            SE (IMC >= 18.5) e (IMC < 25) entao
-              escreva("Parabéns você está no seu peso ideial")
+              escreva("ParabÃ©ns vocÃª estÃ¡ no seu peso ideial")
               senao
-              escreva("Você não está na sua faixa de peso ideal, faça mais exercícios e se alimente melhor!")
+              escreva("VocÃª nÃ£o estÃ¡ na sua faixa de peso ideal, faÃ§a mais exercÃ­cios e se alimente melhor!")
               fimse
               
 
