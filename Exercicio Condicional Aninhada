@@ -1,0 +1,24 @@
+Algoritmo "Aprovado-Recuperação-Reprovado"
+
+Var
+   nota1, nota2, media, nota : real
+
+Inicio
+       escreva("Qual a primeira nota?:")
+       leia(nota1)
+       escreva("Qual a segunda nota?:")
+       leia(nota2)
+       media <- (nota1 + nota2) / 2
+       escreva("Média:", media)
+       se(media >=7) entao
+         escreva("  Aluno Aprovado.")
+       senao
+            se(media >=5) e (media <7) entao
+               escrevaL(" Aluno em Recuperação.")
+       senao
+            escrevaL("  Aluno Reprovado.")
+       FimSe
+fimse
+
+
+Fimalgoritmo
