@@ -1,0 +1,20 @@
+Algoritmo "AprovadoOuReprovado"
+
+Var
+   nota1, nota2, media, nota : real
+
+Inicio
+       escreva("Qual a primeira nota?:")
+       leia(nota1)
+       escreva("Qual a segunda nota?:")
+       leia(nota2)
+       media <- (nota1 + nota2) / 2
+       escreva("Média:", media)
+       se(media >=7) entao
+       escreva("  Aluno Aprovado.")
+       senao
+       escreva(" Aluno Reprovado.")
+       fimse
+
+
+Fimalgoritmo
