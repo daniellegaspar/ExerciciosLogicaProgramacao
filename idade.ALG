@@ -1,0 +1,15 @@
+Algoritmo "Idade"
+
+Var
+       ano, idade, nasc: inteiro
+
+
+Inicio
+      escreva("em que ano estamos?")
+      leia(ano)
+      escreva("em que ano você nasceu?")
+      leia(nasc)
+      idade <- ano - nasc
+      escrevaL("Em ", ano, " você terá", idade, " anos.")
+
+Fimalgoritmo
