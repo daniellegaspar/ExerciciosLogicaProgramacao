@@ -1,0 +1,41 @@
+Algoritmo "Aproveitamento"
+
+Var
+   Nome, aprov: caractere
+   media, Nota1, Nota2:real
+
+Inicio
+      Escreva("Qual o nome do aluno? ")
+      leia(Nome)
+      escrevaL("--------------------------")
+      Escreva("Primeira nota:")
+      leia(Nota1)
+      escrevaL("--------------------------")
+      Escreva("Segunda nota:")
+      leia(Nota2)
+      media <- (Nota1 + Nota2) / 2
+      escrevaL("--------------------------")
+      escrevaL("Média:", media)
+            se(media >=9) e (media <=10) entao
+            escreva("Aproveitamento:A")
+       senao
+               se(media >=8) e (media <9) entao
+               escreva("Aproveitamento:B")
+       senao
+                  se(media >=7) e (media <8) entao
+                  escreva("Aproveitamento:C")
+       senao
+                      se(media >=6) e (media <7) entao
+                      escreva("Aproveitamento:D")
+       senao
+                          se(media >=5) e (media <6) entao
+                          escreva("Aproveitamento:E")
+       senao
+                              escrevaL("Aproveitamento:F")
+                        fimse
+                  fimse
+            fimse
+      fimse
+fimse
+
+Fimalgoritmo
