@@ -1,0 +1,33 @@
+Algoritmo "DOACAOCRIANÇAESPERANCA"
+
+Var
+   doacao, valor:inteiro
+Inicio
+      EscrevaL("----------------------------")
+      EscrevaL("     CRIANÇA ESPERANÇA      ")
+      EscrevaL("----------------------------")
+      EscrevaL(" Muito obrigada por ajudar! ")
+      EscrevaL("  [1] Para doar 10  ")
+      EscrevaL("  [2] Para doar 25  ")
+      EscrevaL("  [3] Para doar 50  ")
+      EscrevaL("  [4] Para doar outros valores  ")
+      EscrevaL("  [5] Para cancelar  ")
+      Leia(doacao)
+      escolha doacao
+              caso 1
+                   valor <- 10
+              caso 2
+                   valor <- 25
+              caso 3
+                   valor <- 50
+              caso 4
+                   escreva("Qual o valor da doação? R$")
+                   leia(valor)
+              caso 5
+                   valor <- 0
+      fimescolha
+      EscrevaL("----------------------------")
+      EscrevaL("Sua doação foi de R$:", valor)
+      Escreval("Muito Obrigada!")
+      EscrevaL("----------------------------")
+Fimalgoritmo
