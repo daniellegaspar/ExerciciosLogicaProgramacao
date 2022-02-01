@@ -1,0 +1,33 @@
+Algoritmo "ContadorInteligente"
+
+Var
+
+   contador, I, F :real
+
+Inicio
+
+     contador <- 0
+     escrevaL("Contador Inteligente ")
+     escrevaL("---------------------")
+     Escreva("Inicio: ")
+     leia(I)
+     Escreva("Fim: ")
+     leia(F)
+     escrevaL("---------------------")
+     Escreval("      CONTANDO       ")
+     escrevaL("---------------------")
+     se (I < F) entao
+        enquanto (I <= F) faca
+        escreva(I, "...")
+        I <- I + 1
+        FimEnquanto
+     senao
+     se (I > F) entao
+        enquanto (I >= F) faca
+        escreva(I, "...")
+        I <- I - 1
+        escreva(I, "...")
+     FimEnquanto
+     FimSe
+FimSE
+Fimalgoritmo
