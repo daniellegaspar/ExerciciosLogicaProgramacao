@@ -1,24 +1,27 @@
 Algoritmo "MelhorAlunoTurma"
 
-Var
-   nota, max,i, quant :Inteiro
-   nome, melhor :caracter
-Inicio
-      Escreva ("Qual a quantidade de alunos?: ")
-      Leia (quant)
-      Max <- 0
-      para i de 0 ate (quant-1) faca
-      escrevaL("--------------------------")
-      Escreva ("Qual o nome do aluno?: ")
-      Leia (nome)
-      Escreva ("Qual a nota do aluno? (valor de 0 a 10 ): ")
-      Leia (nota)
-      Se (nota > max) Entao
-      max <- nota
-      melhor <- nome
-      FimSe
-fimpara
-
-Escreva ("Melhor aluno: " ,melhor,", com a nota ",max)
-
+var
+   tot, cont: Inteiro
+   nome, melhorAluno: Caractere
+   nota, maiorNota: Real
+inicio
+      Escreval("------------------------")
+      Escreva("Quantos alunos a turma tem? ")
+      Leia(tot)
+      cont <- 1
+      Enquanto (cont <= tot) faca
+         Escreval("---------------")
+         Escreval("ALUNO ", cont)
+         Escreva("Nome do aluno: ")
+         Leia(nome)
+         Escreva("Nota de ", nome, ": ")
+         Leia(nota)
+         Se (nota > maiornota) entao
+            maiorNota <- nota
+            melhorAluno <- nome
+         FimSe
+         cont <- cont + 1
+      FimEnquanto
+      Escreval("-------------------")
+      Escreval("O melhor aproveitamento foi de ", melhorAluno, " com a nota ", maiorNota:3:1)
 fimalgoritmo
