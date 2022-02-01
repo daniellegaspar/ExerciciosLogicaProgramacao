@@ -1,0 +1,45 @@
+Algoritmo "ConversãoDeMoeda"
+
+Var
+
+   R, D, C:real
+
+Inicio
+      C <- 1
+      enquanto (C <=4) faca
+               Escreva("Qual o valor em Reais? ")
+               leia(R)
+               D <- R/5.30
+               EscrevaL("O valor convertido é US$", D:5:2)
+               C <- C + 1
+    FimEnquanto
+Fimalgoritmo
+
+
+
+
+
+
+
+//Perguntar ao usuário quantas conversões serão realizadas//
+//⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩//
+
+Algoritmo "ConversãoDeMoeda"
+
+Var
+
+   R, D:real
+   C, Q:inteiro
+
+Inicio
+      C <- 1
+      Escreva("Quantas vezes você quer converter?")
+      leia(Q)
+      enquanto (C <= Q) faca
+               Escreva("Qual o valor em Reais? ")
+               leia(R)
+               D <- R/5.30
+               EscrevaL("O valor convertido é US$", D:5:2)
+               C <- C + 1
+    FimEnquanto
+Fimalgoritmo
