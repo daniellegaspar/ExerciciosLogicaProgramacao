@@ -1,0 +1,28 @@
+Algoritmo "BanguXMadureira"
+
+Var
+   golB, golM, dif:inteiro
+
+Inicio
+      Escreva("Quantos gols Bangu fez? ")
+      leia(golB)
+      escrevaL("--------------------------")
+      Escreva("Quantos gols Madureira fez? ")
+      leia(golM)
+      escrevaL("--------------------------")
+      dif <- abs(golB - golM)
+      escrevaL("Diferença:", dif)
+      se(dif =0) entao
+         escreva("STATUS: Empate")
+       senao
+            se(dif >=1) e (dif <=4) entao
+            escreva("STATUS: Partida Normal")
+       senao
+               se(dif >=5) e (dif <=8) entao
+               escreva("STATUS: Goleada")
+              fimse
+       fimse
+fimse
+
+
+Fimalgoritmo
