@@ -1,0 +1,16 @@
+Algoritmo "Tabuada"
+
+Var
+   cont, N, R :inteiro
+
+Inicio
+     cont <- 1
+     Escreva("Quer ver a tabuada de qual número? ")
+     leia(N)
+     Repita
+     R <- N * cont
+           Escreval(N, " x", cont, " =", R)
+           cont <- cont + 1
+     Ate(cont > 10)
+
+Fimalgoritmo
