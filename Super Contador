@@ -1,0 +1,37 @@
+Algoritmo "SuperContador"
+
+Var
+     esc, contador:inteiro
+
+Inicio
+Repita
+      escrevaL("                          ")
+      escrevaL("    Escolha uma opção:    ")
+      EscrevaL("--------------------------")
+      EscrevaL("|          MENU          |")
+      EscrevaL("--------------------------")
+      EscrevaL("|  [1] Contar de 1 a 10  |")
+      EscrevaL("|  [2] Contar de 10 a 1  |")
+      EscrevaL("|  [3] Sair              |")
+      EscrevaL("--------------------------")
+      Leia(esc)
+      escolha esc
+              Caso 1
+                   contador <- 1
+                   repita
+                   Escreva(contador, "...")
+              contador <- contador + 1
+     Ate(contador > 10)
+              caso 2
+                   contador <- 10
+                   repita
+                   Escreva(contador, "...")
+                   contador <- contador - 1
+     Ate(contador < 1)
+              caso 3
+                   escrevaL("SAINDO!...")
+              Caso 4
+                   EscrevaL("INVALIDO!")
+      fimescolha
+  Ate(esc = 3)
+Fimalgoritmo
