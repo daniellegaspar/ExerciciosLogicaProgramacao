@@ -1,0 +1,34 @@
+Algoritmo "SeletordePessoas"
+
+Var
+     idade, TotH18, TotF25:inteiro
+     sexo, cabelo, resp, N, S, F, M:caractere
+
+Inicio
+Repita
+LimpaTela
+      escrevaL("Qual o sexo?[M/F]")
+      leia(sexo)
+      escrevaL("Qual a idade?")
+      leia(idade)
+      escrevaL("Qual a cor do cabelo?   ")
+      escrevaL("[1] Preto")
+      escrevaL("[2] Castanho")
+      escrevaL("[3] Loiro")
+      escrevaL("[4] Ruivo")
+      leia(cabelo)
+      se (sexo = "M") e (idade > "18") e (cabelo = "2")entao
+         TotH18 <- TotH18 + 1
+      fimse
+      se (sexo = "F") e (idade >= "25") e (idade <= "30") e (cabelo = "3") entao
+         TotF25 <- TotF25 + 1
+      fimse
+      EscrevaL("| Quer continuar? [S/N]  |")
+      leia(resp)
+Ate(resp = "N")
+LimpaTela
+   EscrevaL(" RESULTADO FINAL ")
+   EscrevaL("------------------------------------")
+   EscrevaL("Total de homens com mais de 18 e cabelos castanhos: ", TotH18)
+   EscrevaL("Total de mulheres entre 25 e 30 e cabelos loiros: ", TotF25)
+Fimalgoritmo
