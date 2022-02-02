@@ -1,0 +1,22 @@
+Algoritmo "Fatorial"
+
+Var
+   cont, N, F:inteiro
+   R:caractere
+Inicio
+Repita
+     Escreva("Digite um número: ")
+     leia(N)
+     cont <- N
+     F <- 1
+     Repita
+           F <- F * cont
+           cont <- cont - 1
+     Ate (cont < 1)
+     escreval("O valor do fatorial de", N, " é igual a", F)
+     escreva("Quer continuar? [S/N]")
+     leia(R)
+     LimpaTela
+Ate(R = "N")
+
+Fimalgoritmo
