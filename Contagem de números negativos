@@ -1,0 +1,19 @@
+Algoritmo "ContaNegativos"
+
+Var
+   cont, N, TotN:inteiro
+
+Inicio
+     cont <- 1
+     TotN <- 0
+   Repita
+     Escreva("Digite um número: ")
+     leia(N)
+     se (N<0) entao
+        TotN <- TotN + 1
+     Fimse
+     cont <- cont + 1
+     Ate(cont > 5)
+     Escreval("Foram digitados", TotN, " valores negativos")
+
+Fimalgoritmo
