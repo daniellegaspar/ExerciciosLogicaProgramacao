@@ -1,0 +1,18 @@
+Algoritmo "NumerosPares"
+
+Var
+     Cont, V:inteiro
+
+
+Inicio
+       Escreva("Digite um valor: ")
+       leia(V)
+       se (V % 2 = 1) entao
+          V <- V - 1
+       FimSe
+       para Cont <- 0 ate V passo 2 faca
+         EscrevaL(Cont)
+       fimpara
+
+
+Fimalgoritmo
